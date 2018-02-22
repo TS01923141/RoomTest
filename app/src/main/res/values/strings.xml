@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AndroidArchitectureComponentsTest</string>
+    <string name="action_settings">Settings</string>
+</resources>

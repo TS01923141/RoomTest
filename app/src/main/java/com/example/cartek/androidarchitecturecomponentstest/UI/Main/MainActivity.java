@@ -1,5 +1,6 @@
-package com.example.cartek.androidarchitecturecomponentstest;
+package com.example.cartek.androidarchitecturecomponentstest.UI.Main;
 
+import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Room;
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,15 +14,27 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import java.util.ArrayList;
+import com.example.cartek.androidarchitecturecomponentstest.Data.AppDatabase;
+import com.example.cartek.androidarchitecturecomponentstest.UI.Input.CreateUser;
+import com.example.cartek.androidarchitecturecomponentstest.R;
+import com.example.cartek.androidarchitecturecomponentstest.Data.User;
+
 import java.util.List;
+
+import javax.inject.Inject;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import dagger.android.support.DaggerAppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends DaggerAppCompatActivity {
 
     private static final String TAG = "MainActivity";
+
+    @Inject
+    AppDatabase db;
+//    @Inject
+//    RecyclerView.Adapter adapter;
 
     @BindView(R.id.recycler_view)
     RecyclerView recyclerView;
@@ -45,15 +58,15 @@ public class MainActivity extends AppCompatActivity {
 //            User user = new User("FirstName #" + i, "LastName", "TestEmail@gmial.com");
 //            users.add(user);
 //        }
-        AppDatabase db = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "production")
-                .allowMainThreadQueries()
-                .build();
+
+//        AppDatabase db = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "production")
+//                .allowMainThreadQueries()
+//                .build();
 
         List<User> users = db.userDao().getAllUsers();
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new UserAdapter(users);
-//        adapter = new AsdfAdapter();
         recyclerView.setAdapter(adapter);
 
         fab.setOnClickListener(new View.OnClickListener() {

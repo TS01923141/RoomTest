@@ -1,4 +1,4 @@
-package com.example.cartek.androidarchitecturecomponentstest;
+package com.example.cartek.androidarchitecturecomponentstest.Data;
 
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Insert;

@@ -1,4 +1,4 @@
-package com.example.cartek.androidarchitecturecomponentstest;
+package com.example.cartek.androidarchitecturecomponentstest.UI.Input;
 
 import android.arch.persistence.room.Room;
 import android.content.Intent;
@@ -6,20 +6,30 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.cartek.androidarchitecturecomponentstest.Data.AppDatabase;
+import com.example.cartek.androidarchitecturecomponentstest.R;
+import com.example.cartek.androidarchitecturecomponentstest.UI.Main.MainActivity;
+import com.example.cartek.androidarchitecturecomponentstest.Data.User;
+
+import javax.inject.Inject;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import dagger.android.support.DaggerAppCompatActivity;
 
 /**
  * Created by CarTek on 2018/2/22.
  */
 
-public class CreateUser extends AppCompatActivity {
+public class CreateUser extends DaggerAppCompatActivity {
 
     private static final String TAG = "CreateUser";
+
+    @Inject
+    AppDatabase db;
 
     @BindView(R.id.first_name)
     TextInputEditText firstName;
@@ -36,9 +46,9 @@ public class CreateUser extends AppCompatActivity {
         setContentView(R.layout.create_user);
         ButterKnife.bind(this);
 
-        final AppDatabase db = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "production")
-                .allowMainThreadQueries()
-                .build();
+//        final AppDatabase db = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "production")
+//                .allowMainThreadQueries()
+//                .build();
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

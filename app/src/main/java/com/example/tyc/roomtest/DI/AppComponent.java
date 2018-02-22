@@ -1,8 +1,8 @@
-package com.example.cartek.androidarchitecturecomponentstest.DI;
+package com.example.tyc.roomtest.DI;
 
 import android.app.Application;
 
-import com.example.cartek.androidarchitecturecomponentstest.MainApp;
+import com.example.tyc.roomtest.MainApp;
 
 import javax.inject.Singleton;
 

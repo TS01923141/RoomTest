@@ -1,4 +1,4 @@
-package com.example.cartek.androidarchitecturecomponentstest.DI;
+package com.example.tyc.roomtest.DI;
 
 import android.app.Application;
 import android.content.Context;

@@ -1,4 +1,4 @@
-package com.example.cartek.androidarchitecturecomponentstest.Data;
+package com.example.tyc.roomtest.Data;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;

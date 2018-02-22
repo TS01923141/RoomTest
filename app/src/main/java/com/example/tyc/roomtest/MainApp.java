@@ -1,7 +1,7 @@
-package com.example.cartek.androidarchitecturecomponentstest;
+package com.example.tyc.roomtest;
 
-import com.example.cartek.androidarchitecturecomponentstest.DI.AppComponent;
-import com.example.cartek.androidarchitecturecomponentstest.DI.DaggerAppComponent;
+import com.example.tyc.roomtest.DI.AppComponent;
+import com.example.tyc.roomtest.DI.DaggerAppComponent;
 
 import dagger.android.AndroidInjector;
 import dagger.android.DaggerApplication;

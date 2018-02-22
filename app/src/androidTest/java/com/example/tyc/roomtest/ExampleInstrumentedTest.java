@@ -1,4 +1,4 @@
-package com.example.cartek.androidarchitecturecomponentstest;
+package com.example.tyc.roomtest;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

@@ -1,4 +1,4 @@
-package com.example.cartek.androidarchitecturecomponentstest;
+package com.example.tyc.roomtest;
 
 import org.junit.Test;
 

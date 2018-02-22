@@ -1,11 +1,8 @@
-package com.example.cartek.androidarchitecturecomponentstest.UI.Main;
+package com.example.tyc.roomtest.UI.Main;
 
-import android.arch.persistence.room.Insert;
-import android.arch.persistence.room.Room;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -14,10 +11,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.example.cartek.androidarchitecturecomponentstest.Data.AppDatabase;
-import com.example.cartek.androidarchitecturecomponentstest.UI.Input.CreateUser;
-import com.example.cartek.androidarchitecturecomponentstest.R;
-import com.example.cartek.androidarchitecturecomponentstest.Data.User;
+import com.example.tyc.roomtest.Data.AppDatabase;
+import com.example.tyc.roomtest.UI.Input.CreateUser;
+import com.example.tyc.roomtest.R;
+import com.example.tyc.roomtest.Data.User;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.example.cartek.androidarchitecturecomponentstest.UI.Main;
+package com.example.tyc.roomtest.UI.Main;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -6,8 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.cartek.androidarchitecturecomponentstest.R;
-import com.example.cartek.androidarchitecturecomponentstest.Data.User;
+import com.example.tyc.roomtest.R;
+import com.example.tyc.roomtest.Data.User;
 
 import java.util.List;
 

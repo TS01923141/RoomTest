@@ -1,18 +1,16 @@
-package com.example.cartek.androidarchitecturecomponentstest.UI.Input;
+package com.example.tyc.roomtest.UI.Input;
 
-import android.arch.persistence.room.Room;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TextInputEditText;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.cartek.androidarchitecturecomponentstest.Data.AppDatabase;
-import com.example.cartek.androidarchitecturecomponentstest.R;
-import com.example.cartek.androidarchitecturecomponentstest.UI.Main.MainActivity;
-import com.example.cartek.androidarchitecturecomponentstest.Data.User;
+import com.example.tyc.roomtest.Data.AppDatabase;
+import com.example.tyc.roomtest.R;
+import com.example.tyc.roomtest.UI.Main.MainActivity;
+import com.example.tyc.roomtest.Data.User;
 
 import javax.inject.Inject;
 
